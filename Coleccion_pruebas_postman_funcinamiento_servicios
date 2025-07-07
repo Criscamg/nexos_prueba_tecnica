@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "9fdd77a2-1fba-44e2-8a45-e8e9ffd51e00",
+		"name": "localhost:8080",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "46535471",
+		"_collection_link": "https://bold-rocket-7910441.postman.co/workspace/Cris-G.'s-Workspace~bd94d5a1-7bce-4032-8af2-99382044ff44/collection/46535471-9fdd77a2-1fba-44e2-8a45-e8e9ffd51e00?action=share&source=collection_link&creator=46535471"
+	},
+	"item": [
+		{
+			"name": "/mercancia/consultar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/mercancia/consultar"
+			},
+			"response": []
+		},
+		{
+			"name": "/usuarios/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreUsuario\": \"Camilo García\",\r\n    \"idCargo\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/usuarios/crear"
+			},
+			"response": []
+		},
+		{
+			"name": "/usuarios/consultar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/usuarios/consultar"
+			},
+			"response": []
+		},
+		{
+			"name": "/mercancia/cargos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/mercancia/cargos"
+			},
+			"response": []
+		},
+		{
+			"name": "mercancia/crear",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombreMercancia\": \"MANZANA ROJA\",\r\n    \"cantidad\": 500,\r\n    \"usuarioRegistro\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/mercancia/crear"
+			},
+			"response": []
+		},
+		{
+			"name": "mercancia/eliminar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mercancia\": {\r\n        \"id\": 5,\r\n        \"nombreMercancia\": \"MANZANA ROJA\",\r\n        \"cantidad\": 500,\r\n        \"fechaRegistro\": \"2025-07-07T05:00:00.000+00:00\",\r\n        \"usuarioRegistro\": 1\r\n    },\r\n    \"idUsuario\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/mercancia/eliminar"
+			},
+			"response": []
+		},
+		{
+			"name": "mercancia/modificar",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
