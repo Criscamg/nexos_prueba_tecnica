@@ -1,9 +1,9 @@
 package com.pruebanexos.tecnica.services;
 
-import com.pruebanexos.tecnica.entities.CargoEntity;
+import com.pruebanexos.tecnica.dto.CargoDto;
 
 import java.util.List;
 
 public interface ICargoService {
-    public List<CargoEntity> consultaCargos();
+    public List<CargoDto> consultaCargos();
 }

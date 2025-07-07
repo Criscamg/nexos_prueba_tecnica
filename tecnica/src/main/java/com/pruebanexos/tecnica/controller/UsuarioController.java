@@ -1,5 +1,6 @@
 package com.pruebanexos.tecnica.controller;
 
+import com.pruebanexos.tecnica.dto.UsuarioDto;
 import com.pruebanexos.tecnica.entities.CargoEntity;
 import com.pruebanexos.tecnica.entities.UsuarioEntity;
 import com.pruebanexos.tecnica.services.IUsuarioService;
@@ -21,8 +22,8 @@ public class UsuarioController {
 
     @GetMapping("/consultar")
     @ResponseBody
-    public ResponseEntity<List<UsuarioEntity>> consultaUsuarios(){
-        List<UsuarioEntity> cargos = usuarioService.consultaUsuarios();
+    public ResponseEntity<List<UsuarioDto>> consultaUsuarios(){
+        List<UsuarioDto> cargos = usuarioService.consultaUsuarios();
         return new ResponseEntity<>(cargos, HttpStatus.OK);
     }
 }
