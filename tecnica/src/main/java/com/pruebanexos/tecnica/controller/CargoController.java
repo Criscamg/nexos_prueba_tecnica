@@ -1,5 +1,6 @@
 package com.pruebanexos.tecnica.controller;
 
+import com.pruebanexos.tecnica.dto.CargoDto;
 import com.pruebanexos.tecnica.entities.CargoEntity;
 import com.pruebanexos.tecnica.services.ICargoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,8 @@ public class CargoController {
 
     @GetMapping("/cargos")
     @ResponseBody
-    public ResponseEntity<List<CargoEntity>> consultaCargos(){
-        List<CargoEntity> cargos = cargoService.consultaCargos();
+    public ResponseEntity<List<CargoDto>> consultaCargos(){
+        List<CargoDto> cargos = cargoService.consultaCargos();
         return new ResponseEntity<>(cargos,HttpStatus.OK);
     }
 }
