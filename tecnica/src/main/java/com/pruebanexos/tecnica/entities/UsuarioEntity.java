@@ -23,9 +23,9 @@ public class UsuarioEntity {
     private String nombreUsuario;
 
     @Column(name = "id_cargo")
-    private String idCargo;
+    private int idCargo;
 
-    @Column(name = "fecha_ingreso")
+    @Column(name = "fecha_ingreso", columnDefinition = "default ''")
     private Date fechaIngreso;
 
 }
